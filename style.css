@@ -1185,8 +1185,8 @@ input:focus {
   bottom: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.5);
-  background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.01) 90%, rgba(0, 0, 0, 0) 100%);
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.01) 90%, rgba(0, 0, 0, 0) 100%);
+  background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 70%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 70%, rgba(0, 0, 0, 0) 100%);
 }
 .single-feature-post.video-post .play-btn {
   position: absolute;
@@ -1246,7 +1246,7 @@ input:focus {
   }
 }
 .single-feature-post.video-post .post-content .post-title:hover, .single-feature-post.video-post .post-content .post-title:focus {
-  color: #0f1112;
+  color: #db4437;
 }
 .single-feature-post.video-post .post-content .post-meta {
   position: relative;
