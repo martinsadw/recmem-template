@@ -104,7 +104,9 @@
             }
 
             img {
+                height: 61.875px;
                 width: 100%;
+                object-fit: cover;
             }
         }
 
@@ -342,6 +344,10 @@
         background-color: #1996ce;
     }
 
+    &.cata-warning {
+        background-color: #dd9c21;
+    }
+
     &:hover,
     &:focus {
         background-color: $dark;
@@ -387,6 +393,13 @@
             color: $white;
             line-height: 1;
             z-index: 79;
+        }
+
+        img {
+            // height: 222.25px;
+            height: 196.875px;
+            width: 100%;
+            object-fit: cover;
         }
     }
 

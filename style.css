@@ -1077,7 +1077,9 @@ input:focus {
   }
 }
 .single-blog-post.style-2 .post-thumbnail img {
+  height: 61.875px;
   width: 100%;
+  object-fit: cover;
 }
 .single-blog-post.style-2 .post-content {
   position: relative;
@@ -1296,6 +1298,9 @@ input:focus {
 .post-cata.cata-primary {
   background-color: #1996ce;
 }
+.post-cata.cata-warning {
+  background-color: #dd9c21;
+}
 .post-cata:hover, .post-cata:focus {
   background-color: #0f1112;
   font-size: 12px;
@@ -1338,6 +1343,11 @@ input:focus {
   color: #ffffff;
   line-height: 1;
   z-index: 79;
+}
+.single-post-area .post-thumbnail img {
+  height: 196.875px;
+  width: 100%;
+  object-fit: cover;
 }
 .single-post-area .post-content {
   position: relative;
