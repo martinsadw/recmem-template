@@ -1,0 +1,31 @@
+.src-logo{
+    position: relative;
+    display: inline-block;
+    max-width:100px;
+    max-height:25px;
+    width: auto;
+    height: auto;
+}
+
+.post-bar{
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 6px;
+    min-height: 35px;
+    background-color: #222627;
+}
+
+.post-cata.cata-first {
+  background-color: #eb7722;
+}
+
+.post-cata.cata-second {
+  background-color: #441b7b;
+}
+
+
+.filter-list {
+    height:200px;
+    overflow-y: scroll;
+    position: relative;
+}
