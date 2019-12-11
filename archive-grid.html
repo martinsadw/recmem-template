@@ -185,14 +185,56 @@
     <!-- ##### Breadcrumb Area End ##### -->
 
     <!-- ##### Advanced Search Start ##### -->
-    <div class="vizew-grid-posts-area mb-80">
+    <div class="vizew-grid-posts-area mb-30">
+
         <div class="container">
-            <div class="col-20 col-lg-18">
-                <div class="archive-catagory-view d-flex align-items-center justify-content-between">
-                    <h4><i class="fa " aria-hidden="true"></i> Pesquisa Avançada</h4>
+            <div class="row">
+                <div class="col-20 col-lg-18">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <h4><button class="btn vizew-btn mb-20" data-toggle="collapse" data-target="#searchOptions">Adicionar Filtros</button></h4>
+                    </div>
+                </div>
+            </div>
+
+            <div id="searchOptions" class="collapse">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <h5>Filtros</h5>
+
+                        <input class="filter-search" type="text" placeholder="Procure por filtros">
+
+                        <ul class="filter-list">
+                          <li><a>Figuras planas <input type="checkbox"></a></li>
+                          <li><a>Figuras geométricas <input type="checkbox"></a></li>
+
+                          <li><a>Área dos sólidos <input type="checkbox"></a></li>
+                          <li><a>Fundamental <input type="checkbox"></a></li>
+
+                          <li><a>Ensino Médio <input type="checkbox"></a></li>
+                          <li><a>Enem <input type="checkbox"></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <h5>Tipos de mídia</h5>
+
+                        <input class="filter-search" type="text" placeholder="Escolha os tipos de mídia">
+
+                        <ul class="filter-list">
+                          <li><a>Todos <input type="checkbox"></a></li>
+                          <li><a>Vídeo <input type="checkbox"></a></li>
+
+                          <li><a>Texto <input type="checkbox"></a></li>
+                          <li><a>Áudio <input type="checkbox"></a></li>
+
+                          <li><a>Slide show <input type="checkbox"></a></li>
+                        </ul>
+                    </div>
+
                 </div>
             </div>
         </div>
+
     </div>
     <!-- ##### Advanced Search End ##### -->
 
@@ -205,7 +247,7 @@
                     <div class="archive-catagory-view mb-80 d-flex align-items-center justify-content-between">
                         <!-- Catagory -->
                         <div class="archive-catagory">
-                            <h4><i class="fa fa-trophy" aria-hidden="true"></i> Sports</h4>
+                            <h4>Resultados</h4>
                         </div>
                         <!-- View Options -->
                         <div class="view-options">

@@ -16,16 +16,54 @@
 }
 
 .post-cata.cata-first {
-  background-color: #eb7722;
+    background-color: #eb7722;
 }
 
 .post-cata.cata-second {
-  background-color: #441b7b;
+    background-color: #441b7b;
 }
 
+.filter-search {
+    border: none;
+    background-color: #393c3d;
+    background-repeat: no-repeat;
+    width: 100%;
+    font-size: 16px;
+    padding: 6px 10px 6px 20px;
+    margin-bottom: 12px;
+}
 
-.filter-list {
+.filter-list{
+    list-style-type: none;
+    width: 100%;
+    position: relative;
     height:200px;
     overflow-y: scroll;
-    position: relative;
+    -ms-overflow-style: none;
+}
+
+.filter-list::-webkit-scrollbar {
+    display: none;
+}
+
+.filter-list li a {
+    margin-top: -1px; /* Prevent double borders */
+    background-color: #393c3d;
+    padding: 6px;
+    padding-right: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #000000;
+    display: block;
+}
+
+.filter-list li a:hover:not(.header) {
+    background-color: #0f1112;;
+    /* color: #fff; */
+}
+
+.filter-list li a input{
+    float:right;
+    height:30px;
+    display: block;
 }
