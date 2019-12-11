@@ -67,3 +67,7 @@
     height:30px;
     display: block;
 }
+
+.user-thumb{
+    border-radius:50%;
+}
