@@ -71,3 +71,15 @@
 .user-thumb{
     border-radius:50%;
 }
+
+.single-post-area .post-thumbnail .video-duration {
+  bottom: 35px;
+}
+
+.video-options {
+  right: 30px;
+  bottom: 0px;
+  position: absolute;
+  width: 20px !important;
+  height: 20px !important;
+}
