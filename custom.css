@@ -91,3 +91,19 @@
   width: 50px !important;
   height: 20px !important;
 }
+
+.open-origin {
+  margin: auto;
+  width: 75%;
+  padding-bottom: 50px;
+}
+
+.btn-danger {
+  background-color: #db4437;
+  border-color: #db4437;
+}
+
+.btn-danger:hover {
+  background-color: #d03325;
+  border-color: #d03325;
+}
