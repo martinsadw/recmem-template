@@ -34,6 +34,35 @@
 
     // :: 5.0 Sliders Active Code
     if ($.fn.owlCarousel) {
+        console.log($.fn.owlCarousel)
+        $('.front-page-slides').owlCarousel({
+            // items: 3,
+            margin: 0,
+            loop: true,
+            nav: true,
+            navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+            dots: false,
+            autoplay: true,
+            autoplayTimeout: 4000,
+            smartSpeed: 1000,
+            responsiveClass:true,
+            responsive:{
+                0:{
+                    items:1,
+                    nav:false,
+                },
+                600:{
+                    items:2,
+                    nav:false,
+                },
+                1000:{
+                    items:3,
+                    nav:true,
+                    // loop:false
+                }
+            }
+        });
+
         $('.twitter-slides').owlCarousel({
             items: 1,
             margin: 0,

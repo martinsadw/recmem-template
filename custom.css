@@ -1,10 +1,9 @@
 .src-logo{
-    position: relative;
-    display: inline-block;
-    max-width:100px;
-    max-height:25px;
-    width: auto;
-    height: auto;
+    width: 100px;
+    height: 40px;
+    background-repeat:no-repeat;
+    background-position: left;
+    background-size: contain;
 }
 
 .post-bar{
@@ -37,13 +36,14 @@
     list-style-type: none;
     width: 100%;
     position: relative;
-    height:200px;
+    max-height:200px;
     overflow-y: scroll;
+    scrollbar-color: #ff0000;
     -ms-overflow-style: none;
 }
 
 .filter-list::-webkit-scrollbar {
-    display: none;
+    /* display: none; */
 }
 
 .filter-list li a {
