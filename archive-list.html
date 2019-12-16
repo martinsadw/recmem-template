@@ -17,6 +17,8 @@
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="custom.css">
+    <!-- custom scrollbar stylesheet -->
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
 
 </head>
 
@@ -173,32 +175,13 @@
     </header>
     <!-- ##### Header Area End ##### -->
 
-    <!-- ##### Breadcrumb Area Start ##### -->
-    <div class="vizew-breadcrumb">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="#"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
-                            <li class="breadcrumb-item"><a href="#">Feature</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Archive by Category MUSIC</li>
-                        </ol>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- ##### Breadcrumb Area End ##### -->
-
     <!-- ##### Archive List Posts Area Start ##### -->
-    <div class="vizew-archive-list-posts-area mb-80">
+    <div class="vizew-archive-list-posts-area mb-80 mt-50">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="sidebar-area">
                         <h4><i class="fa fa-search mb-15" style="color:#db4437;" aria-hidden="true"></i> Filtrar </h4>
-                        <!-- ***** Single Widget ***** -->
                         <div class="container">
                             <div id="searchOptions">
                                 <div class="row">
@@ -206,7 +189,7 @@
 
                                         <input class="filter-search" type="text" placeholder="Procure por filtros">
 
-                                        <ul class="filter-list">
+                                        <ul id="filter" class="filter-list">
                                           <li><a>Figuras planas <input type="checkbox"></a></li>
                                           <li><a>Figuras geométricas <input type="checkbox"></a></li>
 
@@ -214,6 +197,12 @@
                                           <li><a>Fundamental <input type="checkbox"></a></li>
 
                                           <li><a>Ensino Médio <input type="checkbox"></a></li>
+                                          <li><a>Enem <input type="checkbox"></a></li>
+                                          <li><a>Enem <input type="checkbox"></a></li>
+                                          <li><a>Enem <input type="checkbox"></a></li>
+                                          <li><a>Enem <input type="checkbox"></a></li>
+                                          <li><a>Enem <input type="checkbox"></a></li>
+                                          <li><a>Enem <input type="checkbox"></a></li>
                                           <li><a>Enem <input type="checkbox"></a></li>
                                         </ul>
                                     </div>
@@ -224,7 +213,7 @@
 
                                         <input class="filter-search" type="text" placeholder="Escolha os tipos de mídia">
 
-                                        <ul class="filter-list">
+                                        <ul id="filter-media" class="filter-list">
                                           <li><a>Todos <input type="checkbox"></a></li>
                                           <li><a>Vídeo <input type="checkbox"></a></li>
 
@@ -246,7 +235,7 @@
                     <div class="archive-catagory-view mb-50 d-flex align-items-center justify-content-between">
                         <!-- Catagory -->
                         <div class="archive-catagory">
-                            <h4><i class="fa fa-music" aria-hidden="true"></i> Music </h4>
+                            <h4> <b>Resultados</b> </h4>
                         </div>
                         <!-- View Options -->
                         <div class="view-options">
@@ -264,11 +253,10 @@
                                     <img src="img/thumbnail/alta1.jpg" alt="">
                                     <span class="video-duration">12:38</span>
                                     <!-- Source bar -->
-                                    <div class="post-bar rounded-bottom">
-                                        <a href="single-post.html" class="foo-logo d-block mb-4 my-auto">
-                                            <img class="src-logo" src="img/src-logo/moodle.png" alt="">
-                                        </a>
-                                    </div>
+                                    <img class="rec-button" src="img/icons/rec.png">
+                                    <a href="single-post.html" class="foo-logo d-block mb-4 my-auto">
+                                        <div class="src-logo" style="background-image:url(img/src-logo/moodle.png);"></div>
+                                    </a>
                                     <!-- Video Duration -->
                                 </div>
 
@@ -306,11 +294,10 @@
                                     <!-- Video Duration -->
                                     <span class="video-duration">43:59</span>
                                     <!-- Source bar -->
-                                    <div class="post-bar rounded-bottom">
-                                        <a href="single-post.html" class="foo-logo d-block mb-4 my-auto">
-                                            <img class="src-logo" src="img/src-logo/educapes.png" alt="">
-                                        </a>
-                                    </div>
+                                    <img class="rec-button" src="img/icons/rec.png">
+                                    <a href="single-post.html" class="foo-logo d-block mb-4 my-auto">
+                                        <div class="src-logo" style="background-image:url(img/src-logo/moodle.png);"></div>
+                                    </a>
                                 </div>
                             </div>
                             <div class="col-12 col-md-6">
@@ -346,11 +333,10 @@
                                     <!-- Video Duration -->
                                     <span class="video-duration">15:31</span>
                                     <!-- Source bar -->
-                                    <div class="post-bar rounded-bottom">
-                                        <a href="single-post.html" class="foo-logo d-block mb-4 my-auto">
-                                            <img class="src-logo" src="img/src-logo/classroom.png" alt="">
-                                        </a>
-                                    </div>
+                                    <img class="rec-button" src="img/icons/rec.png">
+                                    <a href="single-post.html" class="foo-logo d-block mb-4 my-auto">
+                                        <div class="src-logo" style="background-image:url(img/src-logo/moodle.png);"></div>
+                                    </a>
                                 </div>
                             </div>
                             <div class="col-12 col-md-6">
@@ -380,17 +366,16 @@
                         <div class="row align-items-center">
                             <div class="col-12 col-md-6">
                                 <!-- Post Thumbnail -->
-                                <<div class="post-thumbnail">
+                                <div class="post-thumbnail">
                                     <img src="img/thumbnail/video8.jpg" alt="">
 
                                     <!-- Video Duration -->
                                     <span class="video-duration">15:31</span>
                                     <!-- Source bar -->
-                                    <div class="post-bar rounded-bottom">
-                                        <a href="single-post.html" class="foo-logo d-block mb-4 my-auto">
-                                            <img class="src-logo" src="img/src-logo/classroom.png" alt="">
-                                        </a>
-                                    </div>
+                                    <img class="rec-button" src="img/icons/rec.png">
+                                    <a href="single-post.html" class="foo-logo d-block mb-4 my-auto">
+                                        <div class="src-logo" style="background-image:url(img/src-logo/moodle.png);"></div>
+                                    </a>
                                 </div>
                             </div>
                             <div class="col-12 col-md-6">
@@ -426,11 +411,10 @@
                                     <!-- Video Duration -->
                                     <span class="video-duration">15:31</span>
                                     <!-- Source bar -->
-                                    <div class="post-bar rounded-bottom">
-                                        <a href="single-post.html" class="foo-logo d-block mb-4 my-auto">
-                                            <img class="src-logo" src="img/src-logo/classroom.png" alt="">
-                                        </a>
-                                    </div>
+                                    <img class="rec-button" src="img/icons/rec.png">
+                                    <a href="single-post.html" class="foo-logo d-block mb-4 my-auto">
+                                        <div class="src-logo" style="background-image:url(img/src-logo/moodle.png);"></div>
+                                    </a>
                                 </div>
                             </div>
                             <div class="col-12 col-md-6">
@@ -626,6 +610,35 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="js/plugins/plugins.js"></script>
     <!-- Active js -->
     <script src="js/active.js"></script>
+
+    <!-- custom scrollbar plugin -->
+    <script src="js/jquery/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <script>
+		(function($){
+			$(window).on("load",function(){
+
+				$.mCustomScrollbar.defaults.scrollButtons.enable=true; //enable scrolling buttons by default
+				$.mCustomScrollbar.defaults.axis="yx"; //enable 2 axis scrollbars by default
+
+				$("#filter").mCustomScrollbar({theme:"minimal-dark"});
+                $("#filter-media").mCustomScrollbar({theme:"minimal-dark"});
+
+				$(".all-themes-switch a").click(function(e){
+					e.preventDefault();
+					var $this=$(this),
+						rel=$this.attr("rel"),
+						el=$(".content");
+					switch(rel){
+						case "toggle-content":
+							el.toggleClass("expanded-content");
+							break;
+					}
+				});
+
+			});
+		})(jQuery);
+	</script>
 </body>
 
 </html>
