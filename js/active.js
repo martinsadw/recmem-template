@@ -40,7 +40,7 @@
             margin: 0,
             loop: true,
             nav: true,
-            navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+            navText: ['<h1><i class="fa fa-chevron-left"></i></h1>', '<h1><i class="fa fa-chevron-right"></i></h1>'],
             dots: false,
             autoplay: true,
             autoplayTimeout: 4000,
