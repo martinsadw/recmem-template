@@ -30,6 +30,7 @@
     font-size: 16px;
     padding: 6px 10px 6px 20px;
     margin-bottom: 12px;
+    color: #ffffff;
 }
 
 .filter-list{
@@ -46,23 +47,24 @@
     /* display: none; */
 }
 
-.filter-list li a {
+.filter-list li label {
     margin-top: -1px; /* Prevent double borders */
+    margin-bottom: 0px;
     background-color: #393c3d;
     padding: 6px;
     padding-right: 12px;
     text-decoration: none;
     font-size: 18px;
-    color: #000000;
+    color: #a6a6a6;
     display: block;
 }
 
-.filter-list li a:hover:not(.header) {
+.filter-list li label:hover:not(.header) {
     background-color: #0f1112;;
     /* color: #fff; */
 }
 
-.filter-list li a input{
+.filter-list li label input{
     float:right;
     height:30px;
     display: block;

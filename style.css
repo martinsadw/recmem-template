@@ -1523,11 +1523,11 @@ input:focus {
   position: relative;
   z-index: 1;
   background-color: #181b1b;
-  padding: 30px 90px 30px 30px;
+  padding: 30px 1px 30px 30px;
 }
 .vizew-blockquote::after {
-  content: "";
-  font-family: "FontAwesome";
+  /* content: "";
+  font-family: "FontAwesome"; */
   color: #ffffff;
   font-size: 42px;
   position: absolute;
@@ -1748,9 +1748,10 @@ input:focus {
 .post-tags {
   position: relative;
   z-index: 1;
-  border-bottom: 1px solid #393c3d;
+  /* border-bottom: 1px solid #393c3d;
   border-top: 1px solid #393c3d;
-  padding: 40px 0;
+  padding: 40px 0; */
+  padding: 10px 0;
 }
 .post-tags ul {
   display: -webkit-box;
@@ -1832,10 +1833,12 @@ input:focus {
 .comment_area {
   position: relative;
   z-index: 1;
-  border-top: 1px solid #393c3d;
+  /* border-top: 1px solid #393c3d;
   border-bottom: 1px solid #393c3d;
   padding-bottom: 50px;
-  padding-top: 50px;
+  padding-top: 50px; */
+  padding-bottom: 10px;
+  padding-top: 30px;
 }
 .comment_area .comment-content .comment-author {
   -webkit-box-flex: 0;
