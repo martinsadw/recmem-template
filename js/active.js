@@ -53,9 +53,13 @@
                 },
                 600:{
                     items:2,
+                    slideBy: 2,
+                    smartSpeed: 300,
                 },
                 1000:{
                     items:3,
+                    slideBy: 3,
+                    smartSpeed: 300,
                 }
             }
         });
