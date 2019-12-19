@@ -38,27 +38,24 @@
         $('.front-page-slides').owlCarousel({
             // items: 3,
             margin: 0,
-            loop: true,
+            loop: false,
             nav: true,
-            navText: ['<h1><i class="fa fa-chevron-left"></i></h1>', '<h1><i class="fa fa-chevron-right"></i></h1>'],
+            navText: ['<i class="fa fa-chevron-left custom-nav"></i>', '<i class="fa fa-chevron-right custom-nav"></i>'],
             dots: false,
-            autoplay: true,
+            autoplay: false,
             autoplayTimeout: 4000,
             smartSpeed: 1000,
             responsiveClass:true,
+            mouseDrag: false,
             responsive:{
                 0:{
                     items:1,
-                    nav:false,
                 },
                 600:{
                     items:2,
-                    nav:false,
                 },
                 1000:{
                     items:3,
-                    nav:true,
-                    // loop:false
                 }
             }
         });

@@ -131,14 +131,33 @@
     height: 197px;
 }
 
-.owl-nav {
-    text-align: center;
-}
-
 .owl-prev {
     text-align: left;
 }
 
 .owl-next {
     text-align: right;
+}
+
+.custom-nav{
+    font-size: 2.5rem;
+    pointer-events: initial;
+}
+.disabled .custom-nav{
+    display: none;
+}
+
+.owl-nav{
+    background: linear-gradient(90deg, rgba(34,38,39,1) 0%, rgba(34,38,39,1) 1%, rgba(34,38,39,0) 5%,
+                                       rgba(34,38,39,0) 95%, rgba(34,38,39,1) 99%, rgba(34,38,39,1) 100%);
+    text-align: center;
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left:  0;
+    height : 196.875px;
+    justify-content: space-between;
+    align-items: center;
+    pointer-events: none;
 }
