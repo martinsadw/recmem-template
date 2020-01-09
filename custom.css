@@ -43,8 +43,8 @@
     -ms-overflow-style: none;
 }
 
-.filter-list::-webkit-scrollbar {
-    /* display: none; */
+.filter-list li{
+    background-color: #393c3d;
 }
 
 .filter-list li label {
@@ -59,20 +59,22 @@
     display: block;
 }
 
-.filter-list li label:hover:not(.header) {
-    background-color: #0f1112;;
-    /* color: #fff; */
+.filter-list li label:hover:not(.header){
+    background-color: #0f1112;
 }
 
-.filter-list li label input{
+
+.filter-list li input{
+    float:right;
+    height:30px;
+    display: flex;
+}
+
+/* .filter-list li label input{
     float:right;
     height:30px;
     display: block;
-}
-
-.user-thumb{
-    border-radius:50%;
-}
+} */
 
 .single-post-area .post-thumbnail .video-duration {
     bottom: 35px;

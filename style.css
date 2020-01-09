@@ -406,6 +406,21 @@ input:focus {
   box-shadow: none;
 }
 
+.custom-control-label::before {
+  background-color: #222627;
+  border: 2px solid;
+  border-color: #393c3d;
+}
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: #db4437;
+  border: none;
+}
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='white' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E");
+}
+
 .top-header-area {
   position: relative;
   z-index: 1;
@@ -1523,11 +1538,11 @@ input:focus {
   position: relative;
   z-index: 1;
   background-color: #181b1b;
-  padding: 30px 1px 30px 30px;
+  padding: 30px 90px 30px 30px;
 }
 .vizew-blockquote::after {
-  /* content: "";
-  font-family: "FontAwesome"; */
+  content: "";
+  font-family: "FontAwesome";
   color: #ffffff;
   font-size: 42px;
   position: absolute;
@@ -1748,10 +1763,9 @@ input:focus {
 .post-tags {
   position: relative;
   z-index: 1;
-  /* border-bottom: 1px solid #393c3d;
+  border-bottom: 1px solid #393c3d;
   border-top: 1px solid #393c3d;
-  padding: 40px 0; */
-  padding: 10px 0;
+  padding: 40px 0;
 }
 .post-tags ul {
   display: -webkit-box;
@@ -1833,12 +1847,10 @@ input:focus {
 .comment_area {
   position: relative;
   z-index: 1;
-  /* border-top: 1px solid #393c3d;
+  border-top: 1px solid #393c3d;
   border-bottom: 1px solid #393c3d;
   padding-bottom: 50px;
-  padding-top: 50px; */
-  padding-bottom: 10px;
-  padding-top: 30px;
+  padding-top: 50px;
 }
 .comment_area .comment-content .comment-author {
   -webkit-box-flex: 0;
@@ -2585,6 +2597,27 @@ select.form-control {
 
 textarea.form-control {
   height: 140px;
+}
+
+.recomendation-box {
+  margin-top: 20px;
+  width: 100%;
+  background-color: #0f1112;
+}
+.recomendation-box .col img {
+  border-radius: 50%;
+  border: 2px solid;
+  border-color: #ffffff;
+  float: left;
+  margin-right: 20px;
+}
+.recomendation-box .col p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.user-thumb {
+  border-radius: 50%;
 }
 
 /*# sourceMappingURL=style.css.map */
