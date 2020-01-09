@@ -22,60 +22,6 @@
     background-color: #441b7b;
 }
 
-.filter-search {
-    border: none;
-    background-color: #393c3d;
-    background-repeat: no-repeat;
-    width: 100%;
-    font-size: 16px;
-    padding: 6px 10px 6px 20px;
-    margin-bottom: 12px;
-    color: #ffffff;
-}
-
-.filter-list{
-    list-style-type: none;
-    width: 100%;
-    position: relative;
-    max-height:200px;
-    overflow-y: scroll;
-    scrollbar-color: #ff0000;
-    -ms-overflow-style: none;
-}
-
-.filter-list li{
-    background-color: #393c3d;
-}
-
-.filter-list li label {
-    margin-top: -1px; /* Prevent double borders */
-    margin-bottom: 0px;
-    background-color: #393c3d;
-    padding: 6px;
-    padding-right: 12px;
-    text-decoration: none;
-    font-size: 18px;
-    color: #a6a6a6;
-    display: block;
-}
-
-.filter-list li label:hover:not(.header){
-    background-color: #0f1112;
-}
-
-
-.filter-list li input{
-    float:right;
-    height:30px;
-    display: flex;
-}
-
-/* .filter-list li label input{
-    float:right;
-    height:30px;
-    display: block;
-} */
-
 .single-post-area .post-thumbnail .video-duration {
     bottom: 35px;
 }

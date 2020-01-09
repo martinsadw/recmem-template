@@ -2620,4 +2620,49 @@ textarea.form-control {
   border-radius: 50%;
 }
 
+.filter-list {
+  list-style-type: none;
+  width: 100%;
+  position: relative;
+  max-height: 200px;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+}
+.filter-list li div {
+  background-color: #393c3d;
+  text-decoration: none;
+  font-size: 18px;
+  color: #a6a6a6;
+}
+.filter-list li label {
+  display: block;
+  padding-bottom: 8px;
+  margin-left: 5px;
+  margin-top: -1px;
+}
+.filter-list li div:hover:not(.header) {
+  background-color: #0f1112;
+}
+.filter-list .custom-control-label::before {
+  background-color: #393c3d;
+  border: 2px solid;
+  border-color: #222627;
+}
+.filter-list .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: #222627;
+  border: 0px solid;
+  border-color: #a6a6a6;
+}
+
+.filter-search {
+  border: none;
+  background-color: #393c3d;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 6px 10px 6px 20px;
+  margin-bottom: 12px;
+  color: #ffffff;
+}
+
 /*# sourceMappingURL=style.css.map */
