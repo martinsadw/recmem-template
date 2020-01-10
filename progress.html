@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>RecMEM - Recomendação de Mídias Educacionais</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/core-img/favicon.ico">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="custom.css">
+
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area">
+        <!-- Top Header Area -->
+        <div class="top-header-area">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-6">
+                        <!-- Breaking News Widget -->
+                        <div class="breaking-news-area d-flex align-items-center">
+                            <div class="news-title">
+                                <p>Em destaque:</p>
+                            </div>
+                            <div id="breakingNewsTicker" class="ticker">
+                                <ul>
+                                    <!-- https://pt.khanacademy.org/math/geometry-home/geometry-lines/geometry-lines-rays/v/lines-line-segments-and-rays -->
+                                    <li><a href="single-post.html">Retas, segmentos de retas e semirretas</a></li>
+                                    <!-- https://pt.khanacademy.org/math/statistics-probability/inference-categorical-data-chi-square-tests/chi-square-goodness-of-fit-tests/v/pearson-s-chi-square-test-goodness-of-fit -->
+                                    <li><a href="single-post.html">Teste qui-quadrado de Pearson (aderência)</a></li>
+                                    <!-- https://pt.khanacademy.org/math/trigonometry/trigonometry-right-triangles/modeling-with-right-triangles/v/angle-to-aim-to-get-alien -->
+                                    <li><a href="single-post.html">Problema com triângulo retângulo</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="top-meta-data d-flex align-items-center justify-content-end">
+                            <!-- Top Social Info -->
+                            <div class="top-social-info">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-pinterest"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                <a href="#"><i class="fa fa-youtube-play"></i></a>
+                            </div>
+                            <!-- Login -->
+                            <a href="login.html" class="login-btn"><i class="fa fa-user" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navbar Area -->
+        <div class="vizew-main-menu" id="sticker">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+
+                    <!-- Menu -->
+                    <nav class="classy-navbar justify-content-between" id="vizewNav">
+
+                        <!-- Nav brand -->
+                        <a href="index.html" class="nav-brand"><img src="img/core-img/logo.png" alt=""></a>
+
+                        <!-- Top Search Area -->
+                        <div class="top-search-area">
+                            <form action="archive-list.html" method="get">
+                                <input type="search" name="top-search" id="topSearch" placeholder="Pesquisar...">
+                                <button type="submit" class="btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+                            </form>
+                        </div>
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <div class="classy-menu">
+
+                            <!-- Close Button -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul>
+                                    <li><a href="#">Menu</a>
+                                        <ul class="dropdown">
+                                            <li><a href="index.html">- Home</a></li>
+                                            <li><a href="archive-list.html">- Archive List</a></li>
+                                            <li><a href="archive-grid.html">- Archive Grid</a></li>
+                                            <li><a href="single-post.html">- Single Post</a></li>
+                                            <li><a href="video-post.html">- Single Video Post</a></li>
+                                            <li><a href="contact.html">- Contact</a></li>
+                                            <li><a href="typography.html">- Typography</a></li>
+                                            <li><a href="login.html">- Login</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><pre>&nbsp&nbsp</pre></li>
+                                    <li><img src="img/user.jpg" class="user-thumb" alt="" width="40" height="40" aria-hidden="true"></li>
+                                    <li><h6>Professor Fulano</h6></li>
+                                    <li><pre>&nbsp</pre></li>
+                                    <li><h4><i class="fa fa-cog"></i></h4></li>
+                                    <li><pre>&nbsp</pre></li>
+                                    <li><h4><i class="fa fa-sign-out"></i></h4></li>
+                                </ul>
+                            </div>
+                            <!-- Nav End -->
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ##### Header Area End ##### -->
+
+    <!-- ##### Trending Posts Area Start ##### -->
+    <section class="trending-posts-area">
+
+        <div class="container mb-50">
+
+            <div class="row mt-50">
+                <div class="col-12">
+                    <!-- Section Heading -->
+                    <div class="section-heading style-2">
+                        <h4>Relatório de atividades: Maria</h4>
+                        <div class="line"></div>
+                    </div>
+                </div>
+                
+                <div class="col-12">
+                    <div class="tooltip">Hover over me
+                        <span class="tooltiptext">Tooltip text</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+            </div>
+
+            <div class="row">
+                <div class="stepper">
+                  <div class="step text professor minimized">
+                    <div class="step-header"> 21/01/2020 </div>
+                    <div class="step-content one">
+
+                    </div>
+                  </div>
+                  <div class="step video recmen minimized">
+                    <div class="step-header"></div>
+                    <div class="step-content two">
+
+                    </div>
+                  </div>
+                  <div class="step slideshow classmate minimized">
+                    <div class="step-header">09/01/2020</div>
+                    <div class="step-content three">
+
+                    </div>
+                  </div>
+
+                  <div class="step text search minimized">
+                    <div class="step-header">02/01/2020</div>
+                    <div class="step-content three">
+
+                    </div>
+                  </div>
+
+                  <div class="step audio recmen minimized">
+                    <div class="step-header"></div>
+                    <div class="step-content three">
+
+                    </div>
+                  </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- ##### Footer Area Start ##### -->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row justify-content-center">
+                <!-- Footer Widget Area -->
+                <div class="col-12 col-sm-6 col-xl-3">
+                    <div class="footer-widget mb-70">
+                        <!-- Logo -->
+                        <a href="index.html" class="foo-logo d-block mb-4"><img src="img/core-img/logo.png" alt=""></a>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+                        <!-- Footer Newsletter Area -->
+                        <div class="footer-nl-area">
+                            <form action="#" method="post">
+                                <input type="email" name="nl-email" class="form-control" id="nlEmail" placeholder="Seu email">
+                                <button type="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer Widget Area -->
+                <!-- <div class="col-12 col-sm-6 col-xl-3"> -->
+                <!-- </div> -->
+
+                <!-- Footer Widget Area -->
+                <div class="col-12 col-sm-6 col-xl-3">
+                </div>
+
+                <!-- Footer Widget Area -->
+                <div class="col-12 col-sm-6 col-xl-3">
+                    <div class="footer-widget mb-70">
+                        <h6 class="widget-title">Nosso endereço</h6>
+                        <!-- Contact Address -->
+                        <div class="contact-address">
+                            <p>Rua José Lourenço Kelmer, s/n <br>São Pedro, Juiz de Fora - MG, 36036-900</p>
+                            <p>Telefone: (32) 2102-3911</p>
+                            <p>Email: faleconosco@ufjf.edu.br</p>
+                        </div>
+                        <!-- Footer Social Area -->
+                        <div class="footer-social-area">
+                            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                            <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+                            <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+                            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                            <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copywrite Area -->
+        <div class="copywrite-area">
+            <div class="container">
+                <div class="row align-items-center">
+                    <!-- Copywrite Text -->
+                    <div class="col-12 col-sm-6">
+                        <p class="copywrite-text"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ##### Footer Area End ##### -->
+
+    <!-- ##### All Javascript Script ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="js/plugins/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+
+    <script>
+
+    let curOpen;
+
+    $(document).ready(function() {
+      curOpen = $('.step')[0];
+
+      $('.next-btn').on('click', function() {
+        let cur = $(this).closest('.step');
+        let next = $(cur).next();
+        $(cur).addClass('minimized');
+        setTimeout(function() {
+          $(next).removeClass('minimized');
+          curOpen = $(next);
+        }, 400);
+      });
+
+      $('.close-btn').on('click', function() {
+        let cur = $(this).closest('.step');
+        $(cur).addClass('minimized');
+        curOpen = null;
+      });
+
+      $('.step .step-content').on('click' ,function(e) {
+        e.stopPropagation();
+      });
+
+      $('.step').on('click', function() {
+        if (!$(this).hasClass("minimized")) {
+          curOpen = null;
+          $(this).addClass('minimized');
+        }
+        else {
+          let next = $(this);
+          if (curOpen === null) {
+            curOpen = next;
+            $(curOpen).removeClass('minimized');
+          }
+          else {
+            $(curOpen).addClass('minimized');
+            setTimeout(function() {
+              $(next).removeClass('minimized');
+              curOpen = $(next);
+            }, 300);
+          }
+        }
+      });
+    })
+
+    </script>
+
+</body>
+
+</html>
